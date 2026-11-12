@@ -29,6 +29,11 @@
 <p>Discover products, events and places to stay on Tambala Market.</p>
 <p><a href="https://tambalamarket.store/r/muhad-tambala-marketplace-m0gk4e" target="_blank" rel="noopener noreferrer">Explore Tambala Market</a></p>
 <p><small>I may earn a commission if you buy or book through my link.</small></p>
-</section><script>
+</section>
+<section class="section">
+  <h2>About the Founder</h2>
+  <p>KwachaFind was founded by Muhad to help students in Malawi discover useful learning tools and educational resources.</p>
+</section>
+  <script>
 (()=>{const search=document.getElementById('search'),cards=[...document.querySelectorAll('.card')],buttons=[...document.querySelectorAll('[data-cat]')],count=document.getElementById('count'),empty=document.getElementById('empty');let category='All';function update(){const q=search.value.trim().toLowerCase();let shown=0;cards.forEach(c=>{const okCat=category==='All'||c.dataset.cat===category;const okText=(c.dataset.search+' '+c.innerText).toLowerCase().includes(q);const show=okCat&&okText;c.classList.toggle('hidden',!show);if(show)shown++});count.textContent=shown+' resource'+(shown===1?'':'s');empty.classList.toggle('hidden',shown!==0)}buttons.forEach(b=>b.addEventListener('click',()=>{category=b.dataset.cat;buttons.forEach(x=>x.setAttribute('aria-pressed',String(x===b)));update()}));search.addEventListener('input',update);document.getElementById('searchForm').addEventListener('submit',e=>{e.preventDefault();update()})})();
 </script></body></html>
